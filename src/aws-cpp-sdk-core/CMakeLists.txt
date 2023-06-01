@@ -487,6 +487,7 @@ if (WINHTTP_HAS_H2)
     target_compile_definitions(${PROJECT_NAME} PRIVATE "WINHTTP_HAS_H2")
 endif()
 
+unset(CURL_HAS_H2 CACHE)
 if (CURL_HAS_H2)
     target_compile_definitions(${PROJECT_NAME} PRIVATE "CURL_HAS_H2")
 endif()
